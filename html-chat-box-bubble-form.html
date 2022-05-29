@@ -1,66 +1,71 @@
-<div class="main-wrapper">
-<!-- Author: FormBold Team -->
-<!-- Learn More: https://formbold.com -->
-    <div class="w-full">
-      <div class="form-wrapper">
-        <div class="form-header">
-          <h3>Let's chat? - Online</h3>
-          <button>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="white">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <form action="https://formbold.com/s/FORM_ID"method="POST" class="chatbox-form">
-          <div class="mb-5">
-            <label for="name" class="form-label"> Your Name </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your Name"
-              class="form-input"
+<div class="formbold-main-wrapper">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="w-full">
+    <div class="formbold-form-wrapper">
+      <div class="formbold-form-header">
+        <h3>Let's chat? - Online</h3>
+        <button onclick="chatboxToogleHandler()">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="white">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z"
             />
-          </div>
-  
-          <div class="mb-5">
-            <label for="email" class="form-label"> Email Address </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@domain.com"
-              class="form-input"
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z"
             />
-          </div>
-  
-          <div class="mb-5">
-            <label for="message" class="form-label"> Message </label>
-            <textarea
-              rows="6"
-              name="message"
-              id="message"
-              placeholder="Explain you queries"
-              class="form-input"
-            ></textarea>
-          </div>
-  
-          <div>
-            <button class="btn w-full">Submit</button>
-          </div>
-        </form>
+          </svg>
+        </button>
       </div>
-      <div class="action-buttons">
-        <button class="action-btn" onclick="closeChatbox()">
+      <form
+        action="https://formbold.com/s/FORM_ID"
+        method="POST"
+        class="formbold-chatbox-form"
+      >
+        <div class="formbold-mb-5">
+          <label for="name" class="formbold-form-label"> Your Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label"> Email Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@domain.com"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="message" class="formbold-form-label"> Message </label>
+          <textarea
+            rows="6"
+            name="message"
+            id="message"
+            placeholder="Explain you queries"
+            class="formbold-form-input"
+          ></textarea>
+        </div>
+
+        <div>
+          <button class="formbold-btn w-full">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="formbold-action-buttons">
+      <button class="formbold-action-btn" onclick="chatboxToogleHandler()">
+        <span class="formbold-cross-icon">
           <svg
             width="17"
             height="17"
@@ -81,8 +86,8 @@
               fill="white"
             />
           </svg>
-        </button>
-        <button class="action-btn" onclick="openChatbox()">
+        </span>
+        <span class="formbold-chat-icon">
           <svg
             width="28"
             height="28"
@@ -95,160 +100,175 @@
               fill="white"
             />
           </svg>
-        </button>
-      </div>
+        </span>
+      </button>
     </div>
   </div>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .formbold-form-wrapper.active {
+    display: block;
+  }
+
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .formbold-form-header {
+    background: #6a64f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 36px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .formbold-form-header h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  }
+  .formbold-form-header button {
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  .formbold-chatbox-form {
+    padding: 32px 36px;
+  }
+  .formbold-action-buttons {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 48px;
+  }
+  .formbold-action-btn {
+    width: 70px;
+    height: 70px;
+    background: #6a64f1;
+    color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formbold-action-btn .formbold-cross-icon {
+    display: none;
+  }
+
+  .formbold-action-btn.active .formbold-cross-icon {
+    display: block;
+  }
+
+  .formbold-action-btn.active .formbold-chat-icon {
+    display: none;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
     }
-    body {
-      font-family: "Inter", sans-serif;
-    }
-    .mb-5 {
-      margin-bottom: 20px;
-    }
-    .pt-3 {
-      padding-top: 12px;
-    }
-    .main-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 48px;
-    }
-  
-    .form-wrapper {
-      margin: 0 auto;
-      max-width: 550px;
-      width: 100%;
-      background: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-    }
-  
-    .form-wrapper.active {
-      display: block;
-    }
-  
-    .form-label {
-      display: block;
-      font-weight: 500;
-      font-size: 16px;
-      color: #07074d;
-      margin-bottom: 12px;
-    }
-    .form-label-2 {
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .form-input {
-      width: 100%;
-      padding: 12px 24px;
-      border-radius: 6px;
-      border: 1px solid #e0e0e0;
-      background: white;
-      font-weight: 500;
-      font-size: 16px;
-      color: #6b7280;
-      outline: none;
-      resize: none;
-    }
-    .form-input:focus {
-      border-color: #6a64f1;
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-    }
-  
-    .btn {
-      text-align: center;
-      font-size: 16px;
-      border-radius: 6px;
-      padding: 14px 32px;
-      border: none;
-      font-weight: 600;
-      background-color: #6a64f1;
-      color: white;
-      cursor: pointer;
-    }
-    .btn:hover {
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-    }
-  
-    .-mx-3 {
-      margin-left: -12px;
-      margin-right: -12px;
-    }
-    .px-3 {
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-    .flex {
-      display: flex;
-    }
-    .flex-wrap {
-      flex-wrap: wrap;
-    }
-    .w-full {
-      width: 100%;
-    }
-    .form-header {
-      background: #6a64f1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 36px;
-      border-radius: 8px 8px 0px 0px;
-    }
-    .form-header h3 {
-      font-weight: 700;
-      font-size: 20px;
-      color: white;
-    }
-    .form-header button {
-      color: white;
-      background: transparent;
-      border: none;
-    }
-    .chatbox-form {
-      padding: 32px 36px;
-    }
-    .action-buttons {
-      max-width: 550px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 48px;
-    }
-    .action-btn {
-      width: 70px;
-      height: 70px;
-      background: #6a64f1;
-      color: white;
-      border-radius: 50%;
-      margin-left: 20px;
-      border: none;
-      cursor: pointer;
-    }
-    @media (min-width: 540px) {
-      .sm\:w-half {
-        width: 50%;
-      }
-    }
-  </style>
-  <script>
-    const formWrapper = document.querySelector(".form-wrapper");
-    const openChatbox = () => {
-      formWrapper.classList.toggle("active");
-    };
-  
-    const closeChatbox = () => {
-      formWrapper.classList.remove("active");
-    };
-  </script>
+  }
+</style>
+<script>
+  const formWrapper = document.querySelector(".formbold-form-wrapper");
+  const formActionButton = document.querySelector(".formbold-action-btn");
+  function chatboxToogleHandler() {
+    formWrapper.classList.toggle("active");
+    formActionButton.classList.toggle("active");
+  }
+</script>
