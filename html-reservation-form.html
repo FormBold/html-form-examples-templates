@@ -1,0 +1,189 @@
+<div class="main-wrapper">
+<!-- Author: FormBold Team -->
+<!-- Learn More: https://formbold.com -->
+<!-- Author: FormBold Team -->
+<!-- Learn More: https://formbold.com -->
+
+  <div class="form-wrapper">
+    <form
+  action="https://formbold.com/s/FORM_ID"
+  method="POST">
+      <div class="flex flex-wrap -mx-3">
+        <div class="w-full sm:w-half px-3">
+          <div class="mb-5">
+            <label for="fName" class="form-label"> First Name </label>
+            <input
+              type="text"
+              name="fName"
+              id="fName"
+              placeholder="First Name"
+              class="form-input"
+            />
+          </div>
+        </div>
+        <div class="w-full sm:w-half px-3">
+          <div class="mb-5">
+            <label for="lName" class="form-label"> Last Name </label>
+            <input
+              type="text"
+              name="lName"
+              id="lName"
+              placeholder="Last Name"
+              class="form-input"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label for="guest" class="form-label">
+          How many guest are you bringing?
+        </label>
+        <input
+          type="number"
+          name="guest"
+          id="guest"
+          placeholder="5"
+          class="form-input"
+        />
+      </div>
+
+      <div class="flex flex-wrap -mx-3">
+        <div class="w-full sm:w-half px-3">
+          <div class="mb-5 w-full">
+            <label for="date" class="form-label"> Date </label>
+            <input type="date" name="date" id="date" class="form-input" />
+          </div>
+        </div>
+        <div class="w-full sm:w-half px-3">
+          <div class="mb-5">
+            <label for="time" class="form-label"> Time </label>
+            <input type="time" name="time" id="time" class="form-input" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex mb-5">
+        <div class="flex">
+          <input type="radio" name="radio1" id="radioButton1" />
+          <label for="radioButton1" class="radio-label"> Yes </label>
+        </div>
+        <div class="flex">
+          <input type="radio" name="radio1" id="radioButton2" />
+          <label for="radioButton2" class="radio-label"> No </label>
+        </div>
+      </div>
+
+      <div>
+        <button class="btn">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .mb-5 {
+    margin-bottom: 20px;
+  }
+  .pt-3 {
+    padding-top: 12px;
+  }
+  .main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+  .form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+  }
+  .btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .-mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+  .radio-label {
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 12px;
+    color: #070707;
+    padding-right: 20px;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+</style>
