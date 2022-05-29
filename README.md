@@ -1,4 +1,4 @@
-# Free HTML Form Templates and Examples
+# Free HTML Form Templates and Coded Examples
 Fully working free HTML Form Templates and code examples, that you can copy-paste and start using immediately with static websites. Each and every template is coded using vanilla HTML/CSS and comes with refreshing and clean design without any dependencies. These forms are crafted to serve different purposes and come with all necessary web forms and form elements you need such as HTML contact form, reservation form, appointment form, file upload form, chat bubble, and much more.
 
 [![form templates](https://cdn.formbold.com/form-templates.jpg)](https://formbold.com/templates)
