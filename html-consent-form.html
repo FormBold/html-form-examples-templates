@@ -136,7 +136,7 @@
           type="file"
           name="upload"
           id="upload"
-          class="formbold-form-input"
+          class="formbold-form-input formbold-form-file"
         />
       </div>
 
@@ -304,6 +304,33 @@
     margin-top: 2px;
     border: 0.7px solid #dde3ec;
     border-radius: 3px;
+  }
+
+  .formbold-form-file {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(83, 99, 135, 0.5);
+  }
+  .formbold-form-file::-webkit-file-upload-button {
+    display: none;
+  }
+  .formbold-form-file:before {
+    content: 'Upload';
+    display: inline-block;
+    background: #EEEEEE;
+    border: 0.5px solid #E7E7E7;
+    border-radius: 3px;
+    padding: 3px 12px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #637381;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 10px;
   }
 
   .formbold-btn {

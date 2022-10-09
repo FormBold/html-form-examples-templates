@@ -120,7 +120,7 @@
         ></textarea>
       </div>
 
-      <div class="formbold-mb-3">
+      <div class="formbold-form-file-flex">
         <label for="upload" class="formbold-form-label">
           Upload Resume
         </label>
@@ -128,7 +128,7 @@
           type="file"
           name="upload"
           id="upload"
-          class="formbold-form-input"
+          class="formbold-form-file"
         />
       </div>
 
@@ -214,6 +214,41 @@
     line-height: 24px;
     display: block;
     margin-bottom: 10px;
+  }
+
+  .formbold-form-file-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .formbold-form-file-flex .formbold-form-label {
+    margin-bottom: 0;
+  }
+  .formbold-form-file {
+    font-size: 14px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .formbold-form-file::-webkit-file-upload-button {
+    display: none;
+  }
+  .formbold-form-file:before {
+    content: 'Upload file';
+    display: inline-block;
+    background: #EEEEEE;
+    border: 0.5px solid #FBFBFB;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 3px 12px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #637381;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 10px;
   }
 
   .formbold-btn {
