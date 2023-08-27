@@ -4,7 +4,6 @@ Version: 1.0
 URL: https://formbold.com
 */
 
-
 *,
 ::before,
 ::after {
@@ -594,6 +593,172 @@ video {
 
 .mt-0\.5 {
   margin-top: 0.125rem;
+}
+
+.mt-8 {
+  margin-top: 32px;
+}
+
+.py-1,
+.pt-1 {
+  padding-top: 4px;
+}
+.py-2,
+.pt-2 {
+  padding-top: 8px;
+}
+.py-3,
+.pt-3 {
+  padding-top: 12px;
+}
+.py-4,
+.pt-4 {
+  padding-top: 16px;
+}
+.py-5,
+.pt-5 {
+  padding-top: 20px;
+}
+.py-6,
+.pt-6 {
+  padding-top: 24px;
+}
+.py-7,
+.pt-7 {
+  padding-top: 28px;
+}
+.py-8,
+.pt-8 {
+  padding-top: 32px;
+}
+.py-9,
+.pt-9 {
+  padding-top: 36px;
+}
+.py-10,
+.pt-10 {
+  padding-top: 40px;
+}
+.py-1,
+.pb-1 {
+  padding-bottom: 4px;
+}
+.py-2,
+.pb-2 {
+  padding-bottom: 8px;
+}
+.py-3,
+.pb-3 {
+  padding-bottom: 12px;
+}
+.py-4,
+.pb-4 {
+  padding-bottom: 16px;
+}
+.py-5,
+.pb-5 {
+  padding-bottom: 20px;
+}
+.py-6,
+.pb-6 {
+  padding-bottom: 24px;
+}
+.py-7,
+.pb-7 {
+  padding-bottom: 28px;
+}
+.py-8,
+.pb-8 {
+  padding-bottom: 32px;
+}
+.py-9,
+.pb-9 {
+  padding-bottom: 36px;
+}
+.py-10,
+.pb-10 {
+  padding-bottom: 40px;
+}
+
+.px-1,
+.pl-1 {
+  padding-top: 4px;
+}
+.px-2,
+.pl-2 {
+  padding-top: 8px;
+}
+.px-3,
+.pl-3 {
+  padding-top: 12px;
+}
+.px-4,
+.pl-4 {
+  padding-top: 16px;
+}
+.px-5,
+.pl-5 {
+  padding-top: 20px;
+}
+.px-6,
+.pl-6 {
+  padding-top: 24px;
+}
+.px-7,
+.pl-7 {
+  padding-top: 28px;
+}
+.px-8,
+.pl-8 {
+  padding-top: 32px;
+}
+.px-9,
+.pl-9 {
+  padding-top: 36px;
+}
+.px-10,
+.pl-10 {
+  padding-top: 40px;
+}
+.px-1,
+.pr-1 {
+  padding-bottom: 4px;
+}
+.px-2,
+.pr-2 {
+  padding-bottom: 8px;
+}
+.px-3,
+.pr-3 {
+  padding-bottom: 12px;
+}
+.px-4,
+.pr-4 {
+  padding-bottom: 16px;
+}
+.px-5,
+.pr-5 {
+  padding-bottom: 20px;
+}
+.px-6,
+.pr-6 {
+  padding-bottom: 24px;
+}
+.px-7,
+.pr-7 {
+  padding-bottom: 28px;
+}
+.px-8,
+.pr-8 {
+  padding-bottom: 32px;
+}
+.px-9,
+.pr-9 {
+  padding-bottom: 36px;
+}
+.px-10,
+.pr-10 {
+  padding-bottom: 40px;
 }
 
 .block {
@@ -1581,7 +1746,9 @@ input[type="checkbox"]:checked ~ span span {
 .react-datepicker__navigation--next {
   right: 2px;
 }
-.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+.react-datepicker__navigation--next--with-time:not(
+    .react-datepicker__navigation--next--with-today-button
+  ) {
   right: 85px;
 }
 .react-datepicker__navigation--years {
@@ -1945,20 +2112,60 @@ input[type="checkbox"]:checked ~ span span {
 .react-datepicker__year-text--keyboard-selected:hover {
   background-color: #1d5d90;
 }
-.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
-.react-datepicker__month-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
-.react-datepicker__quarter-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
-.react-datepicker__year-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+.react-datepicker__day--in-selecting-range:not(
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--in-range
+  ),
+.react-datepicker__month-text--in-selecting-range:not(
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--in-range
+  ),
+.react-datepicker__quarter-text--in-selecting-range:not(
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--in-range
+  ),
+.react-datepicker__year-text--in-selecting-range:not(
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--in-range
+  ) {
   background-color: rgba(33, 107, 165, 0.5);
 }
 .react-datepicker__month--selecting-range
-  .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range),
+  .react-datepicker__day--in-range:not(
+    .react-datepicker__day--in-selecting-range,
+    .react-datepicker__month-text--in-selecting-range,
+    .react-datepicker__quarter-text--in-selecting-range,
+    .react-datepicker__year-text--in-selecting-range
+  ),
 .react-datepicker__month--selecting-range
-  .react-datepicker__month-text--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range),
+  .react-datepicker__month-text--in-range:not(
+    .react-datepicker__day--in-selecting-range,
+    .react-datepicker__month-text--in-selecting-range,
+    .react-datepicker__quarter-text--in-selecting-range,
+    .react-datepicker__year-text--in-selecting-range
+  ),
 .react-datepicker__month--selecting-range
-  .react-datepicker__quarter-text--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range),
+  .react-datepicker__quarter-text--in-range:not(
+    .react-datepicker__day--in-selecting-range,
+    .react-datepicker__month-text--in-selecting-range,
+    .react-datepicker__quarter-text--in-selecting-range,
+    .react-datepicker__year-text--in-selecting-range
+  ),
 .react-datepicker__month--selecting-range
-  .react-datepicker__year-text--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range) {
+  .react-datepicker__year-text--in-range:not(
+    .react-datepicker__day--in-selecting-range,
+    .react-datepicker__month-text--in-selecting-range,
+    .react-datepicker__quarter-text--in-selecting-range,
+    .react-datepicker__year-text--in-selecting-range
+  ) {
   background-color: #f0f0f0;
   color: #000;
 }
@@ -3856,4 +4063,8 @@ input[type="date"] {
 }
 .formbold-builder-form .fb-builder-item .form-group .label-required {
   margin-left: 5px;
+}
+
+.share_form_div {
+  padding: 20px 10px;
 }
