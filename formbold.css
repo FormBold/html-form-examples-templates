@@ -682,7 +682,7 @@ video {
 
 .px-1,
 .pl-1 {
-  padding-top: 4px;
+  padding-left: 4px;
 }
 .px-2,
 .pl-2 {
@@ -690,75 +690,75 @@ video {
 }
 .px-3,
 .pl-3 {
-  padding-top: 12px;
+  padding-left: 12px;
 }
 .px-4,
 .pl-4 {
-  padding-top: 16px;
+  padding-left: 16px;
 }
 .px-5,
 .pl-5 {
-  padding-top: 20px;
+  padding-left: 20px;
 }
 .px-6,
 .pl-6 {
-  padding-top: 24px;
+  padding-left: 24px;
 }
 .px-7,
 .pl-7 {
-  padding-top: 28px;
+  padding-left: 28px;
 }
 .px-8,
 .pl-8 {
-  padding-top: 32px;
+  padding-left: 32px;
 }
 .px-9,
 .pl-9 {
-  padding-top: 36px;
+  padding-left: 36px;
 }
 .px-10,
 .pl-10 {
-  padding-top: 40px;
+  padding-left: 40px;
 }
 .px-1,
 .pr-1 {
-  padding-bottom: 4px;
+  padding-right: 4px;
 }
 .px-2,
 .pr-2 {
-  padding-bottom: 8px;
+  padding-right: 8px;
 }
 .px-3,
 .pr-3 {
-  padding-bottom: 12px;
+  padding-right: 12px;
 }
 .px-4,
 .pr-4 {
-  padding-bottom: 16px;
+  padding-right: 16px;
 }
 .px-5,
 .pr-5 {
-  padding-bottom: 20px;
+  padding-right: 20px;
 }
 .px-6,
 .pr-6 {
-  padding-bottom: 24px;
+  padding-right: 24px;
 }
 .px-7,
 .pr-7 {
-  padding-bottom: 28px;
+  padding-right: 28px;
 }
 .px-8,
 .pr-8 {
-  padding-bottom: 32px;
+  padding-right: 32px;
 }
 .px-9,
 .pr-9 {
-  padding-bottom: 36px;
+  padding-right: 36px;
 }
 .px-10,
 .pr-10 {
-  padding-bottom: 40px;
+  padding-right: 40px;
 }
 
 .block {
@@ -883,6 +883,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.text-red-400 {
+  color: red;
 }
 
 .p-10 {
@@ -3983,16 +3987,6 @@ input[type="checkbox"]:checked ~ span span {
   min-height: 50px;
 }
 
-input[type="date"]:before {
-  content: attr(placeholder);
-  color: #aaa;
-  margin-right: 0.5em;
-}
-
-input[type="date"] {
-  width: 200px;
-}
-
 .validation-error {
   position: fixed;
   width: 100%;
@@ -4067,4 +4061,12 @@ input[type="date"] {
 
 .share_form_div {
   padding: 20px 10px;
+}
+
+.share_form_div select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
 }
