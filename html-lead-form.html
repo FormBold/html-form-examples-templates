@@ -1,0 +1,287 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/3aa91a43-07e8-4c1d-9837-9b8f46b3220d/leadform.png"
+            alt="Lead Form Illustration"
+            class="form-image"
+        />
+
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Get in Touch</h2>
+                <p class="form-description">
+                    Please fill out the form to get more information or book a
+                    demo. All required fields are marked with *.
+                </p>
+            </div>
+
+            <!-- Essential Fields -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name*</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label"
+                    >Phone Number (Optional)</label
+                >
+                <input type="tel" name="phone" id="phone" class="form-input" />
+            </div>
+
+            <div class="form-group">
+                <label for="company" class="form-label"
+                    >Company Name (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="company"
+                    id="company"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="job-title" class="form-label"
+                    >Job Title (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="job-title"
+                    id="job-title"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label"
+                    >Message / Inquiry (Optional)</label
+                >
+                <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="interest" class="form-label">Interested In*</label>
+                <select
+                    name="interest"
+                    id="interest"
+                    class="form-select"
+                    required
+                >
+                    <option value="product-demo">Product Demo</option>
+                    <option value="pricing">Pricing</option>
+                    <option value="support">Support</option>
+                </select>
+            </div>
+
+            <!-- Compliance & Consent -->
+            <div class="consent-group">
+                <input
+                    type="checkbox"
+                    id="consent"
+                    class="form-checkbox"
+                    required
+                />
+                <label for="consent" class="consent-label">
+                    I agree to receive communications about products, services,
+                    and updates.
+                </label>
+            </div>
+
+            <!-- Optional Privacy Policy and GDPR Notice -->
+            <div class="privacy-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">GDPR Notice</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Inquiry</button>
+        </form>
+    </div>
+</div>
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 3rem; /* mb-12 */
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Consent Checkbox Group */
+    .consent-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-checkbox {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+    }
+
+    .consent-label {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    .privacy-links {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    .privacy-links a {
+        color: #4f46e5;
+        text-decoration: none;
+    }
+
+    .privacy-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        background-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca;
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
