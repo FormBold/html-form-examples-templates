@@ -1,0 +1,386 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/7b4ee20c-0d4c-4a5b-99ef-9d9ca8564b53/eventregristration.png"
+            alt="Event Registration Form Illustration"
+            class="form-image"
+        />
+
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Event Registration</h2>
+                <p class="form-description">
+                    Fill in the form below to register for the event. All
+                    required fields are marked with *.
+                </p>
+            </div>
+
+            <!-- Basic Attendee Information -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name*</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label"
+                    >Phone Number (Optional)</label
+                >
+                <input type="text" name="phone" id="phone" class="form-input" />
+            </div>
+
+            <div class="form-group">
+                <label for="organization" class="form-label"
+                    >Organization / Company Name (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="organization"
+                    id="organization"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Ticket Type / Registration Category -->
+            <div class="form-group">
+                <label for="ticket-type" class="form-label"
+                    >Ticket Type / Registration Category*</label
+                >
+                <select
+                    name="ticket-type"
+                    id="ticket-type"
+                    class="form-select"
+                    required
+                >
+                    <option value="general">General</option>
+                    <option value="vip">VIP</option>
+                    <option value="student">Student</option>
+                    <option value="speaker">Speaker</option>
+                    <option value="press">Press</option>
+                </select>
+            </div>
+
+            <!-- Number of Attendees -->
+            <div class="form-group">
+                <label for="num-attendees" class="form-label"
+                    >Number of Attendees (Optional)</label
+                >
+                <input
+                    type="number"
+                    name="num-attendees"
+                    id="num-attendees"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Location Preferences -->
+            <div class="form-group">
+                <label class="form-label"
+                    >Location Preferences (Optional)</label
+                >
+                <div class="radio-group">
+                    <label class="option-item">
+                        <input
+                            type="radio"
+                            name="location-preference"
+                            id="physical-location"
+                            value="physical"
+                            class="form-radio"
+                        />
+                        Physical
+                    </label>
+                    <label class="option-item">
+                        <input
+                            type="radio"
+                            name="location-preference"
+                            id="virtual-location"
+                            value="virtual"
+                            class="form-radio"
+                        />
+                        Virtual
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="preferred-session" class="form-label"
+                    >Select Preferred Session/City</label
+                >
+                <select
+                    name="preferred-session"
+                    id="preferred-session"
+                    class="form-select"
+                >
+                    <option value="session-1">Session 1 - New York</option>
+                    <option value="session-2">Session 2 - Los Angeles</option>
+                    <option value="session-3">Session 3 - Virtual</option>
+                </select>
+            </div>
+
+            <!-- Optional Extras -->
+            <div class="form-group">
+                <label for="dietary-preferences" class="form-label"
+                    >Dietary Preferences</label
+                >
+                <select
+                    name="dietary-preferences"
+                    id="dietary-preferences"
+                    class="form-select"
+                >
+                    <option value="none">None</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten-free">Gluten-Free</option>
+                    <option value="halal">Halal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="accessibility-needs" class="form-label"
+                    >Accessibility Needs</label
+                >
+                <textarea
+                    name="accessibility-needs"
+                    id="accessibility-needs"
+                    rows="3"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="promo-code" class="form-label"
+                    >Referral Code / Promo Code</label
+                >
+                <input
+                    type="text"
+                    name="promo-code"
+                    id="promo-code"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Comments or Questions -->
+            <div class="form-group">
+                <label for="comments" class="form-label"
+                    >Comments or Questions</label
+                >
+                <textarea
+                    name="comments"
+                    id="comments"
+                    rows="5"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <!-- Consent -->
+            <div class="consent-group">
+                <input
+                    type="checkbox"
+                    id="consent-checkbox"
+                    class="form-checkbox"
+                    required
+                />
+                <label for="consent-checkbox" class="consent-label">
+                    I agree to the
+                    <a href="#">terms and conditions of registration</a>.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Register Now</button>
+        </form>
+    </div>
+</div>
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 3rem; /* mb-12 */
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Radio button group */
+    .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .option-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-radio {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+        margin-right: 0.5rem;
+    }
+
+    /* Consent Checkbox Group */
+    .consent-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-checkbox {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+    }
+
+    .consent-label {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    .consent-label a {
+        color: #4f46e5;
+        text-decoration: none;
+    }
+
+    .consent-label a:hover {
+        text-decoration: underline;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        background-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca;
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
