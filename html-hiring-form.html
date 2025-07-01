@@ -1,0 +1,394 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/6ce5a3d3-6e49-4135-96e2-e6f3a1b30ba8/hiring.png"
+            alt="Hiring Form Illustration"
+            class="form-image"
+        />
+
+        <form
+            action="https://formbold.com/s/FORM_ID"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Job Application Form</h2>
+                <p class="form-description">
+                    Please fill out the form below to apply for the job. Fields
+                    with * are required.
+                </p>
+            </div>
+
+            <!-- Personal Details -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name*</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number*</label>
+                <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="location" class="form-label"
+                    >Current Location*</label
+                >
+                <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Job Role Specific -->
+            <div class="form-group">
+                <label for="role" class="form-label">Role Applying For*</label>
+                <select name="role" id="role" class="form-select" required>
+                    <option value="designer">Designer / UX Specialist</option>
+                    <option value="developer">Developer / Engineer</option>
+                    <option value="manager">Project Manager</option>
+                    <option value="hr">HR Specialist</option>
+                </select>
+            </div>
+
+            <!-- Tech-Specific Fields (Conditionally Visible) -->
+            <div id="tech-fields" class="hidden">
+                <div class="form-group">
+                    <label for="languages" class="form-label"
+                        >Programming Languages</label
+                    >
+                    <input
+                        type="text"
+                        name="languages"
+                        id="languages"
+                        class="form-input"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="tools" class="form-label"
+                        >Tools & Frameworks</label
+                    >
+                    <input
+                        type="text"
+                        name="tools"
+                        id="tools"
+                        class="form-input"
+                    />
+                </div>
+            </div>
+
+            <!-- Salary & Availability -->
+            <div class="form-group">
+                <label for="salary" class="form-label">Expected Salary*</label>
+                <input
+                    type="text"
+                    name="salary"
+                    id="salary"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="startdate" class="form-label"
+                    >Available Start Date*</label
+                >
+                <input
+                    type="date"
+                    name="startdate"
+                    id="startdate"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="worktype" class="form-label"
+                    >Preferred Work Type*</label
+                >
+                <select
+                    name="worktype"
+                    id="worktype"
+                    class="form-select"
+                    required
+                >
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="contract">Contract</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience" class="form-label"
+                    >Experience (Years)*</label
+                >
+                <input
+                    type="number"
+                    name="experience"
+                    id="experience"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="resume" class="form-label"
+                    >Upload Resume (PDF/DOC)*</label
+                >
+                <input
+                    type="file"
+                    name="resume"
+                    id="resume"
+                    accept=".pdf,.doc,.docx"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter" class="form-label"
+                    >Cover Letter / Portfolio Link</label
+                >
+                <input
+                    type="text"
+                    name="coverletter"
+                    id="coverletter"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin" class="form-label"
+                    >LinkedIn Profile</label
+                >
+                <input
+                    type="url"
+                    name="linkedin"
+                    id="linkedin"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Consent Checkbox -->
+            <div class="consent-group">
+                <input
+                    type="checkbox"
+                    id="consentCheckbox"
+                    class="form-checkbox"
+                    required
+                />
+                <label for="consentCheckbox" class="consent-label">
+                    I agree to the
+                    <a href="#">data policy</a> and
+                    <a href="#">terms & conditions</a>.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Conditional Logic: Show extra fields for developer roles
+    document.getElementById("role").addEventListener("change", function () {
+        const techFields = document.getElementById("tech-fields");
+        if (this.value === "developer") {
+            techFields.classList.remove("hidden");
+        } else {
+            techFields.classList.add("hidden");
+        }
+    });
+</script>
+
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Consent Checkbox Group */
+    .consent-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-checkbox {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+    }
+
+    .consent-label {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    .consent-label a {
+        color: #4f46e5;
+        text-decoration: none;
+    }
+
+    .consent-label a:hover {
+        text-decoration: underline;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        background-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca;
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Class to hide elements */
+    .hidden {
+        display: none;
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
