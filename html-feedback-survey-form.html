@@ -1,0 +1,626 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/dd89656c-de92-494e-9e4d-2cc0fac0ecf6/surveyform.png"
+            alt="Survey Form Illustration"
+            class="form-image"
+        />
+
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Customer Feedback Survey</h2>
+                <p class="form-description">
+                    Please provide your feedback to help us improve. All
+                    required fields are marked with *.
+                </p>
+            </div>
+
+            <!-- Basic Information -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label"
+                    >Phone Number (Optional)</label
+                >
+                <input type="text" name="phone" id="phone" class="form-input" />
+            </div>
+
+            <div class="form-group">
+                <label for="company" class="form-label"
+                    >Company Name (for B2B)</label
+                >
+                <input
+                    type="text"
+                    name="company"
+                    id="company"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="experience-date" class="form-label"
+                    >Date of Experience*</label
+                >
+                <input
+                    type="date"
+                    name="experience-date"
+                    id="experience-date"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Rating Fields -->
+            <div class="form-group">
+                <label class="form-label">Overall Satisfaction*</label>
+                <div class="star-rating-group">
+                    <input
+                        type="radio"
+                        id="star5"
+                        name="overall-satisfaction"
+                        value="5"
+                        required
+                    /><label for="star5" title="5 stars">★</label>
+                    <input
+                        type="radio"
+                        id="star4"
+                        name="overall-satisfaction"
+                        value="4"
+                    /><label for="star4" title="4 stars">★</label>
+                    <input
+                        type="radio"
+                        id="star3"
+                        name="overall-satisfaction"
+                        value="3"
+                    /><label for="star3" title="3 stars">★</label>
+                    <input
+                        type="radio"
+                        id="star2"
+                        name="overall-satisfaction"
+                        value="2"
+                    /><label for="star2" title="2 stars">★</label>
+                    <input
+                        type="radio"
+                        id="star1"
+                        name="overall-satisfaction"
+                        value="1"
+                    /><label for="star1" title="1 star">★</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"
+                    >Rate the Quality of Service/Product</label
+                >
+                <div class="options-group">
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="service-quality"
+                            value="excellent"
+                            class="form-radio"
+                        />
+                        Excellent</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="service-quality"
+                            value="good"
+                            class="form-radio"
+                        />
+                        Good</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="service-quality"
+                            value="average"
+                            class="form-radio"
+                        />
+                        Average</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="service-quality"
+                            value="poor"
+                            class="form-radio"
+                        />
+                        Poor</label
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"
+                    >Rate the Communication / Support</label
+                >
+                <div class="options-group">
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="support-rating"
+                            value="excellent"
+                            class="form-radio"
+                        />
+                        Excellent</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="support-rating"
+                            value="good"
+                            class="form-radio"
+                        />
+                        Good</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="support-rating"
+                            value="average"
+                            class="form-radio"
+                        />
+                        Average</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="support-rating"
+                            value="poor"
+                            class="form-radio"
+                        />
+                        Poor</label
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Would You Recommend Us?</label>
+                <div class="options-group">
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="recommendation"
+                            value="yes"
+                            class="form-radio"
+                        />
+                        Yes</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="recommendation"
+                            value="no"
+                            class="form-radio"
+                        />
+                        No</label
+                    >
+                </div>
+            </div>
+
+            <!-- Open-Ended Feedback -->
+            <div class="form-group">
+                <label for="liked-most" class="form-label"
+                    >What did you like most?</label
+                >
+                <textarea
+                    name="liked-most"
+                    id="liked-most"
+                    rows="3"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="improvement" class="form-label"
+                    >What could we improve?</label
+                >
+                <textarea
+                    name="improvement"
+                    id="improvement"
+                    rows="3"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-comments" class="form-label"
+                    >Additional Comments or Suggestions</label
+                >
+                <textarea
+                    name="additional-comments"
+                    id="additional-comments"
+                    rows="3"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <!-- Client-Specific or Context-Based Fields -->
+            <div class="form-group">
+                <label for="service-team" class="form-label"
+                    >Service/Team You Interacted With</label
+                >
+                <select
+                    name="service-team"
+                    id="service-team"
+                    class="form-select"
+                >
+                    <option value="team-1">Team 1 - Consultation</option>
+                    <option value="team-2">Team 2 - Purchase</option>
+                    <option value="team-3">Team 3 - Support</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="service-type" class="form-label"
+                    >Type of Service Used</label
+                >
+                <select
+                    name="service-type"
+                    id="service-type"
+                    class="form-select"
+                >
+                    <option value="consultation">Consultation</option>
+                    <option value="purchase">Purchase</option>
+                    <option value="support">Support</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="project-id" class="form-label"
+                    >Project Name / ID (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="project-id"
+                    id="project-id"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Survey-Specific Inputs -->
+            <div class="form-group">
+                <label class="form-label">Please rate the following:</label>
+                <div class="options-group">
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="likert-scale"
+                            value="strongly-agree"
+                            class="form-radio"
+                        />
+                        Strongly Agree</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="likert-scale"
+                            value="agree"
+                            class="form-radio"
+                        />
+                        Agree</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="likert-scale"
+                            value="neutral"
+                            class="form-radio"
+                        />
+                        Neutral</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="likert-scale"
+                            value="disagree"
+                            class="form-radio"
+                        />
+                        Disagree</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="radio"
+                            name="likert-scale"
+                            value="strongly-disagree"
+                            class="form-radio"
+                        />
+                        Strongly Disagree</label
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"
+                    >Which features do you use most?</label
+                >
+                <div class="options-group-vertical">
+                    <label class="option-item"
+                        ><input
+                            type="checkbox"
+                            name="features-used"
+                            value="feature-1"
+                            class="form-checkbox"
+                        />
+                        Feature 1</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="checkbox"
+                            name="features-used"
+                            value="feature-2"
+                            class="form-checkbox"
+                        />
+                        Feature 2</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="checkbox"
+                            name="features-used"
+                            value="feature-3"
+                            class="form-checkbox"
+                        />
+                        Feature 3</label
+                    >
+                    <label class="option-item"
+                        ><input
+                            type="checkbox"
+                            name="features-used"
+                            value="feature-4"
+                            class="form-checkbox"
+                        />
+                        Feature 4</label
+                    >
+                </div>
+            </div>
+
+            <!-- Consent & Follow-up -->
+            <div class="consent-group">
+                <input type="checkbox" id="follow-up" class="form-checkbox" />
+                <label for="follow-up" class="consent-label"
+                    >I allow you to contact me for follow-up.</label
+                >
+            </div>
+
+            <div class="consent-group">
+                <input
+                    type="checkbox"
+                    id="testimonial-consent"
+                    class="form-checkbox"
+                />
+                <label for="testimonial-consent" class="consent-label"
+                    >I agree to share this feedback publicly (for
+                    testimonial/marketing use).</label
+                >
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 3rem; /* mb-12 */
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Interactive Star Rating */
+    .star-rating-group {
+        display: flex;
+        flex-direction: row-reverse; /* Reverse the order of stars to make the CSS work */
+        justify-content: flex-end; /* Aligns the reversed stars to the left */
+    }
+
+    .star-rating-group input[type="radio"] {
+        display: none; /* Hide the actual radio buttons */
+    }
+
+    .star-rating-group label {
+        font-size: 2rem; /* Size of the star characters */
+        color: #d1d5db; /* Default, unselected star color */
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+        padding: 0 0.1em;
+    }
+
+    /* Change color on hover */
+    .star-rating-group label:hover,
+    .star-rating-group label:hover ~ label {
+        color: #f59e0b; /* Gold color for hovered stars */
+    }
+
+    /* Keep stars colored when a radio button is checked */
+    .star-rating-group input[type="radio"]:checked ~ label {
+        color: #f59e0b; /* Gold color for selected stars */
+    }
+
+    /* Radio and Checkbox Groups */
+    .options-group {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+        gap: 1rem;
+    }
+
+    .option-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-radio,
+    .form-checkbox {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+        margin-right: 0.5rem;
+    }
+
+    .options-group-vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Consent Checkbox Group */
+    .consent-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .consent-label {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        background-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca;
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+        .options-group {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+    }
+</style>
