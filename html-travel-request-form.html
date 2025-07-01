@@ -1,0 +1,440 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/24b7ddf6-a399-4aa0-8a64-6a28bc797576/travelrequestform.png"
+            alt="Travel Request Form Illustration"
+            class="form-image"
+        />
+        <form
+            action="https://formbold.com/s/FORM_ID"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Travel Request Form</h2>
+                <p class="form-description">
+                    Please fill in the necessary details for your travel
+                    request. All required fields are marked with *.
+                </p>
+            </div>
+
+            <!-- Employee / Requester Information -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name*</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="department" class="form-label"
+                    >Department / Team*</label
+                >
+                <input
+                    type="text"
+                    name="department"
+                    id="department"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="employee-id" class="form-label"
+                    >Employee ID (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="employee-id"
+                    id="employee-id"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="request-date" class="form-label"
+                    >Date of Request*</label
+                >
+                <input
+                    type="date"
+                    name="request-date"
+                    id="request-date"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Travel Details -->
+            <div class="form-group">
+                <label for="purpose" class="form-label"
+                    >Purpose of Travel*</label
+                >
+                <input
+                    type="text"
+                    name="purpose"
+                    id="purpose"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="travel-type" class="form-label">Travel Type*</label>
+                <select
+                    name="travel-type"
+                    id="travel-type"
+                    class="form-select"
+                    required
+                >
+                    <option value="domestic">Domestic</option>
+                    <option value="international">International</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="destination" class="form-label"
+                    >Destination City / Country*</label
+                >
+                <input
+                    type="text"
+                    name="destination"
+                    id="destination"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="departure-date" class="form-label"
+                    >Departure Date*</label
+                >
+                <input
+                    type="date"
+                    name="departure-date"
+                    id="departure-date"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="return-date" class="form-label">Return Date*</label>
+                <input
+                    type="date"
+                    name="return-date"
+                    id="return-date"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Accommodation & Transport -->
+            <div class="form-group">
+                <label class="form-label">Hotel Required?</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            name="hotel-required"
+                            id="hotel-required-yes"
+                            value="yes"
+                            class="form-radio"
+                        />
+                        <label for="hotel-required-yes" class="radio-label"
+                            >Yes</label
+                        >
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            name="hotel-required"
+                            id="hotel-required-no"
+                            value="no"
+                            class="form-radio"
+                        />
+                        <label for="hotel-required-no" class="radio-label"
+                            >No</label
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mode-of-travel" class="form-label"
+                    >Mode of Travel*</label
+                >
+                <select
+                    name="mode-of-travel"
+                    id="mode-of-travel"
+                    class="form-select"
+                    required
+                >
+                    <option value="flight">Flight</option>
+                    <option value="train">Train</option>
+                    <option value="bus">Bus</option>
+                    <option value="personal-vehicle">Personal Vehicle</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="travel-budget" class="form-label"
+                    >Travel Budget Estimate*</label
+                >
+                <input
+                    type="number"
+                    name="travel-budget"
+                    id="travel-budget"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group">
+                <label for="notes" class="form-label"
+                    >Justification or Notes</label
+                >
+                <textarea
+                    name="notes"
+                    id="notes"
+                    rows="5"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="special-requirements" class="form-label"
+                    >Special Requirements (Visa, Stopovers, etc.)</label
+                >
+                <textarea
+                    name="special-requirements"
+                    id="special-requirements"
+                    rows="3"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <!-- Attachment -->
+            <div class="form-group">
+                <label for="attachment" class="form-label"
+                    >Upload Supporting Documents (Invitation, Itinerary,
+                    etc.)</label
+                >
+                <input
+                    type="file"
+                    name="attachment"
+                    id="attachment"
+                    accept=".jpg,.jpeg,.png,.pdf,.docx"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Approval Confirmation -->
+            <div class="form-group checkbox-group">
+                <input
+                    type="checkbox"
+                    id="approval-checkbox"
+                    class="form-checkbox"
+                    required
+                />
+                <label for="approval-checkbox" class="checkbox-label">
+                    I confirm the above travel details and agree to company
+                    policy.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn"
+                >Request Travel Approval</button
+            >
+        </form>
+    </div>
+</div>
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem; /* Added horizontal padding for mobile */
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        height: auto;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Radio button group */
+    .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .radio-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-radio {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5; /* text-indigo-600 */
+    }
+
+    .radio-label {
+        margin-left: 0.5rem; /* ml-2 */
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    /* Checkbox group */
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-checkbox {
+        height: 1rem; /* h-4 */
+        width: 1rem; /* w-4 */
+        color: #4f46e5; /* text-indigo-600 */
+    }
+
+    .checkbox-label {
+        margin-left: 0.5rem; /* ml-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        background-color: #4f46e5; /* bg-indigo-600 */
+        padding: 0.75rem 1.5rem; /* px-6 py-3 */
+        font-weight: 500; /* font-medium */
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca; /* hover:bg-indigo-700 */
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 */
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
