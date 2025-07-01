@@ -1,0 +1,381 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/ebc7ed19-79e2-407b-9f98-26c27a5a3b23/eventsponsorship.png"
+            alt="Event Sponsorship Form Illustration"
+            class="form-image"
+        />
+
+        <form
+            action="https://formbold.com/s/FORM_ID"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Event Sponsorship Form</h2>
+                <p class="form-description">
+                    Please fill out the form below to confirm your sponsorship
+                    for the event. All required fields are marked with *.
+                </p>
+            </div>
+
+            <!-- Sponsor Information -->
+            <div class="form-group">
+                <label for="organization" class="form-label"
+                    >Organization / Company Name*</label
+                >
+                <input
+                    type="text"
+                    name="organization"
+                    id="organization"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="contact-name" class="form-label"
+                    >Contact Person Full Name*</label
+                >
+                <input
+                    type="text"
+                    name="contact-name"
+                    id="contact-name"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number*</label>
+                <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="website" class="form-label"
+                    >Website / Social Media (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="website"
+                    id="website"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Sponsorship Details -->
+            <div class="form-group">
+                <label for="sponsorship-type" class="form-label"
+                    >Type of Sponsorship*</label
+                >
+                <select
+                    name="sponsorship-type"
+                    id="sponsorship-type"
+                    class="form-select"
+                    required
+                >
+                    <option value="platinum">Platinum</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="in-kind">In-kind</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sponsorship-amount" class="form-label"
+                    >Sponsorship Amount*</label
+                >
+                <input
+                    type="number"
+                    name="sponsorship-amount"
+                    id="sponsorship-amount"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"
+                    >Preferred Benefits / Visibility*</label
+                >
+                <div class="options-group-vertical">
+                    <label class="option-item">
+                        <input
+                            type="checkbox"
+                            name="preferred-benefits"
+                            value="logo-on-banners"
+                            class="form-checkbox"
+                        />
+                        Logo on banners
+                    </label>
+                    <label class="option-item">
+                        <input
+                            type="checkbox"
+                            name="preferred-benefits"
+                            value="speaking-opportunity"
+                            class="form-checkbox"
+                        />
+                        Speaking opportunity
+                    </label>
+                    <label class="option-item">
+                        <input
+                            type="checkbox"
+                            name="preferred-benefits"
+                            value="booth-space"
+                            class="form-checkbox"
+                        />
+                        Booth space
+                    </label>
+                    <label class="option-item">
+                        <input
+                            type="checkbox"
+                            name="preferred-benefits"
+                            value="website-listing"
+                            class="form-checkbox"
+                        />
+                        Website listing
+                    </label>
+                </div>
+            </div>
+
+            <!-- Document Upload -->
+            <div class="form-group">
+                <label for="company-logo" class="form-label"
+                    >Upload Company Logo / Banner (Optional)</label
+                >
+                <input
+                    type="file"
+                    name="company-logo"
+                    id="company-logo"
+                    accept=".jpg,.jpeg,.png,.pdf"
+                    class="form-input"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="sponsorship-proposal" class="form-label"
+                    >Upload Sponsorship Proposal / Agreement (Optional)</label
+                >
+                <input
+                    type="file"
+                    name="sponsorship-proposal"
+                    id="sponsorship-proposal"
+                    accept=".pdf,.doc,.docx"
+                    class="form-input"
+                />
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group">
+                <label for="additional-notes" class="form-label"
+                    >Additional Notes</label
+                >
+                <textarea
+                    name="additional-notes"
+                    id="additional-notes"
+                    rows="5"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <!-- Consent / Declaration -->
+            <div class="consent-group">
+                <input
+                    type="checkbox"
+                    id="consent"
+                    class="form-checkbox"
+                    required
+                />
+                <label for="consent" class="consent-label">
+                    I agree to sponsor this event and understand the terms and
+                    conditions.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn"
+                >Confirm Sponsorship</button
+            >
+        </form>
+    </div>
+</div>
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 3rem; /* mb-12 */
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Checkbox list styling */
+    .options-group-vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .option-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-checkbox {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+        margin-right: 0.5rem;
+    }
+
+    /* Consent Checkbox Group */
+    .consent-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .consent-label {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        background-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca;
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
