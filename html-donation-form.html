@@ -1,0 +1,390 @@
+<div class="main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <img
+            src="https://ucarecdn.com/72c83037-be6b-4303-81b3-64edb7b7aa24/donationform.png"
+            alt="Donation Form Illustration"
+            class="form-image"
+        />
+
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title">Donate Now</h2>
+                <p class="form-description">
+                    Your donation makes a difference. Please fill out the form
+                    below to contribute.
+                </p>
+            </div>
+
+            <!-- Donor Information -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name*</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label"
+                    >Phone Number (Optional)</label
+                >
+                <input type="text" name="phone" id="phone" class="form-input" />
+            </div>
+
+            <!-- Donation Amount -->
+            <div class="form-group">
+                <label class="form-label">Donation Amount*</label>
+                <div class="donation-options">
+                    <label>
+                        <input
+                            type="radio"
+                            name="donation-amount"
+                            value="500"
+                            class="form-radio"
+                        />
+                        ₹500
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="donation-amount"
+                            value="1000"
+                            class="form-radio"
+                        />
+                        ₹1000
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="donation-amount"
+                            value="2500"
+                            class="form-radio"
+                        />
+                        ₹2500
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="donation-amount"
+                            value="5000"
+                            class="form-radio"
+                        />
+                        ₹5000
+                    </label>
+                </div>
+                <div class="other-amount-group">
+                    <label for="other-amount" class="form-label"
+                        >Other Amount</label
+                    >
+                    <input
+                        type="number"
+                        name="other-amount"
+                        id="other-amount"
+                        class="form-input"
+                        placeholder="Enter amount"
+                    />
+                </div>
+            </div>
+
+            <!-- Payment Details -->
+            <div class="form-group">
+                <label class="form-label">Payment Mode*</label>
+                <div class="payment-options">
+                    <label>
+                        <input
+                            type="radio"
+                            name="payment-mode"
+                            value="cash"
+                            class="form-radio"
+                        />
+                        Cash
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="payment-mode"
+                            value="card"
+                            class="form-radio"
+                            required
+                        />
+                        Credit/Debit Card
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="payment-mode"
+                            value="netbanking"
+                            class="form-radio"
+                        />
+                        Net Banking
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="payment-mode"
+                            value="paypal"
+                            class="form-radio"
+                        />
+                        PayPal
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="transaction-id" class="form-label"
+                    >Transaction ID (Optional)</label
+                >
+                <input
+                    type="text"
+                    name="transaction-id"
+                    id="transaction-id"
+                    class="form-input"
+                    placeholder="Enter if you have one"
+                />
+            </div>
+
+            <!-- Purpose (Optional) -->
+            <div class="form-group">
+                <label for="purpose" class="form-label"
+                    >Purpose (Optional)</label
+                >
+                <select name="purpose" id="purpose" class="form-select">
+                    <option value="general-fund">General Fund</option>
+                    <option value="education-program">Education Program</option>
+                    <option value="disaster-relief">Disaster Relief</option>
+                    <option value="medical-support">Medical Support</option>
+                </select>
+            </div>
+
+            <!-- Message / Note -->
+            <div class="form-group">
+                <label for="message" class="form-label"
+                    >Write a note with your donation (Optional)</label
+                >
+                <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    class="form-textarea"
+                ></textarea>
+            </div>
+
+            <!-- Consent / Agreement -->
+            <div class="consent-group">
+                <input
+                    type="checkbox"
+                    id="consent"
+                    class="form-checkbox"
+                    required
+                />
+                <label for="consent" class="consent-label">
+                    I agree to the terms and understand this donation is
+                    non-refundable.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Donation</button>
+        </form>
+    </div>
+</div>
+<style>
+    /* General Body and Font Styles */
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+    }
+
+    /* Main container for centering the form */
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* Form wrapper/card */
+    .form-wrapper {
+        width: 100%;
+        max-width: 42rem; /* max-w-2xl */
+        border-radius: 0.5rem; /* rounded-lg */
+        background-color: white;
+        padding: 2.5rem; /* p-10 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Top image styling */
+    .form-image {
+        margin-bottom: 3rem; /* mb-12 */
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    /* Header section for title and description */
+    .form-header {
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.875rem; /* text-2xl */
+        font-weight: 600; /* font-semibold */
+        color: #1f2937; /* text-gray-800 */
+    }
+
+    .form-description {
+        margin-top: 0.5rem; /* mt-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #4b5563; /* text-gray-600 */
+        line-height: 1.5;
+    }
+
+    /* Container for each form field group */
+    .form-group {
+        margin-bottom: 1.5rem; /* mb-6 */
+    }
+
+    /* Form labels */
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem; /* mb-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 500; /* font-medium */
+        color: #4b5563; /* text-gray-600 */
+    }
+
+    /* Common styles for input, select, and textarea */
+    .form-input,
+    .form-select,
+    .form-textarea {
+        width: 100%;
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.75rem; /* p-3 */
+        font-size: 0.875rem; /* text-sm */
+        color: #1f2937; /* text-gray-800 */
+        box-sizing: border-box;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        border-color: #6366f1; /* focus:border-indigo-500 */
+        box-shadow: 0 0 0 1px #6366f1; /* focus:ring-1 focus:ring-indigo-500 */
+        outline: none;
+    }
+
+    /* Donation Amount Radio Buttons */
+    .donation-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .donation-options label,
+    .payment-options label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    .form-radio {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+    }
+
+    .other-amount-group {
+        margin-top: 1rem;
+    }
+
+    .payment-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* Consent Checkbox Group */
+    .consent-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-checkbox {
+        height: 1rem;
+        width: 1rem;
+        color: #4f46e5;
+    }
+
+    .consent-label {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+        color: #4b5563;
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        border-radius: 0.375rem;
+        background-color: #4f46e5;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4338ca;
+    }
+
+    .submit-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 640px) {
+        .main-container {
+            padding: 1rem;
+        }
+        .form-wrapper {
+            padding: 1.5rem;
+        }
+        .form-title {
+            font-size: 1.5rem;
+        }
+        .donation-options,
+        .payment-options {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>
